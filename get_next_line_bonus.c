@@ -6,7 +6,7 @@
 /*   By: yahokari <yahokari@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/22 19:47:01 by yahokari          #+#    #+#             */
-/*   Updated: 2022/05/02 18:47:45 by yahokari         ###   ########.fr       */
+/*   Updated: 2022/06/20 22:49:05 by yahokari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_read_char(int fd, char *save)
 	char	*tmp;
 	int		read_len;
 
-	buf = malloc(sizeof(char) * (BUFFER_SIZE + 1));
+	buf = malloc(sizeof(char) * ((size_t)BUFFER_SIZE + 1));
 	if (buf == NULL)
 		return (NULL);
 	while (ft_strchr(save, '\n') == NULL)
